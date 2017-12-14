@@ -1,0 +1,11 @@
+body {
+    margin: 0 auto;
+    font-family: Comic;
+    font-size: 26px;
+    background-image: url("assets/images/bowserbackground.jpg");
+   
+}
+
+h1 {
+    color: blue;
+}
