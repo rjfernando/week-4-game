@@ -70,19 +70,23 @@ h2, {
     padding-top: 20px;
     padding-left: 10px;
     margin-left: 150px;
-    background: gray;
+    background: lightsalmon;
     clear: none;
 }
 
 .imageSelection {
     float: left;
     margin-left: 30%;
+    margin-right: 20%;
 
 }
 .usersPick {
     float: left;
-    width: 200px;
-    height: 100px;
+    width: 500px;
+    height: 75px;
+    margin-left: 30%;
+    padding-top: 20px;
     background: gray;
+    text-align: center;
 }
 

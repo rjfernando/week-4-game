@@ -10,28 +10,29 @@ $(document).ready(function() {
 
     //use math.floor method to randomize computerNumbers with values of 19-120
    
-    var randomNumber = Math.floor(Math.random() * 101 + 19)
+    var randomNumber = 19 + Math.floor(Math.random() * 101)
         $("#randomNumber").text(randomNumber); 
     
     //also use math.floop method for each cystal with values of 1-12
-   
-    var blueCrystal = Math.floor(Math.random() * 11 + 1)
-    var orangeCrystal = Math.floor(Math.random() * 11 + 1)
-    var pinkCrystal = Math.floor(Math.random() * 11 + 1)
-    var purpleCrystal = Math.floor(Math.random() * 11 + 1)
-    
+
+        var blueCrystal = Math.floor(Math.random() * 11 + 1)
+        var orangeCrystal = Math.floor(Math.random() * 11 + 1)
+        var pinkCrystal = Math.floor(Math.random() * 11 + 1)
+        var purpleCrystal = Math.floor(Math.random() * 11 + 1)
+     
     //.....GAME PLAY SECTION.......
 
     //create function to reset game when user either wins or losses
     
     function resetGame() {
-        randomNumber = Math.floor(Math.random() * 101 + 19)
+        randomNumber = 19 + Math.floor(Math.random() * 101)
         blueCrystal = Math.floor(Math.random() * 11 + 1)
         orangeCrystal = Math.floor(Math.random() * 11 + 1)
         pinkCrystal = Math.floor(Math.random() * 11 + 1)
         purpleCrystal = Math.floor(Math.random() * 11 + 1)
-        $("#randomNumber").text(randomNumber);
         usersPick = 0;
+
+        $("#randomNumber").text(randomNumber);
 
     }
 
@@ -56,7 +57,6 @@ $(document).ready(function() {
     $("#orangeCrystal").on("click", function() {
         usersPick = usersPick + orangeCrystal;
         
-        
             if (usersPick === randomNumber){
                 win();
             }
@@ -70,7 +70,6 @@ $(document).ready(function() {
     $("#pinkCrystal").on("click", function() {
         usersPick = usersPick + pinkCrystal;
         
-        
             if (usersPick === randomNumber){
                 win();
             }
@@ -83,7 +82,6 @@ $(document).ready(function() {
 
     $("#purpleCrystal").on("click", function() {
         usersPick = usersPick + purpleCrystal;
-        
         
             if (usersPick === randomNumber){
                 win();
@@ -99,7 +97,7 @@ $(document).ready(function() {
    //create functions for wins and losses that include win/lose counter, reset function and alerts.
 
     function win() {
-        wins +1; 
+        wins ++; 
         resetGame ();
         $("#wins").text(wins);
         $("#result").html("You Win!");
@@ -109,19 +107,14 @@ $(document).ready(function() {
     $("wins").text(wins);
    
     function lose() {
-        losses +1;
+        losses ++;
         resetGame ();
         $("#result").html("You Lose!"); 
         $("#losses").text(losses);
         alert("YOU LOST");
     }
-
+    
     $("losses").text(losses);
-    // function clickAudio () {
-    //     var audio = newAudio ("../audio/Button-onclick.mp3"); 
-        
-    // }
-
 
 
 });
