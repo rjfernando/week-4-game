@@ -21,7 +21,7 @@ h2, {
 
 .container {
     width: 100%;
-    clear: none; 
+    clear: none;
 }
 
 .main-header {
@@ -90,3 +90,75 @@ h2, {
     text-align: center;
 }
 
+@media screen and (max-width: 375px) {
+
+.container {
+    min-width: 80%;
+    clear: none;
+    
+}
+
+.main-header {
+    
+    width: 80%;
+    height: 40px;
+    margin-bottom: 5px;
+    /* margin-right: 40px; */
+    margin-left: 40px;
+
+}
+
+.instructions {
+    width: 80%;
+    height: 30%;
+    margin-left: 40px;
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+
+.computerNumber {
+    width: 40%;
+    height: 15%;
+    font-size: 12px;
+    /* margin-right: 100px; */
+    margin-left: 40px;
+    padding-top: 14px;
+    padding-bottom: 6px;
+    float: left;
+}
+
+.scoreboard {
+    margin-right: 0px;
+    margin-left: 10px;
+    width: 30%;
+    height: 10%;
+    font-size: 12px;
+    padding: 15px;
+    float: left;
+    
+}
+
+.imageSelection {
+    /* float: left; */
+    margin-left: 80px;
+    margin-right: 20%;
+
+}
+
+.crystal-image {
+    width: 50px;
+    height: 50px;
+    padding-right: 0px;
+
+}
+
+.usersPick {
+    width: 80%;
+    height: 40px;
+    margin-right: 0px;
+    margin-left: 40px;
+    font-size: 14px;
+    text-align: center;
+    
+}
+    
